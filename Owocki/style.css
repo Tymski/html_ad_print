@@ -7,7 +7,7 @@ body {
     background-color: #fff;
     color: black;
     text-align: center;
-    font-size: 4.1mm;
+    font-size: 4.10mm;
 }
 
 .page {
@@ -24,7 +24,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 71% 26% 3%;
-    grid-template-rows: 30% 55% 15%;
+    grid-template-rows: 28% 57% 15%;
     grid-template-areas: 
     "jumbotron thumbnails sidebar" 
     "content thumbnails sidebar" 
@@ -43,7 +43,7 @@ body {
 
 .jumbotron {
     grid-area: jumbotron;
-    background-image: url("img/bg.png");
+    background-image: url("img/bg1.png");
     background-position-y: 30%;
     background-size: cover;
     color: black;
@@ -51,7 +51,10 @@ body {
     /* padding-left: 10mm; */
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 1mm 1mm 5mm rgb(0, 0, 0), 0mm 0mm 5mm rgb(255, 255, 255);
+    text-shadow:  0mm 0mm 10mm rgb(255, 255, 255),
+    0mm 0mm 30mm #fff;
+    width: 98%
+
 }
 
 
@@ -60,6 +63,15 @@ body {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: scroll;
+}
+
+.content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    margin-top: 2mm;
+    margin-bottom: 2mm;
 }
 
 .sidebar {
