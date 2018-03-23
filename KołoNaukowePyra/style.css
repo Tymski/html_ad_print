@@ -1,0 +1,169 @@
+body {
+    width: 210mm;
+    height: 309.471mm;
+    /*height: 297mm*/
+    margin: 0;
+    background-color: #333;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    font-size: 3.9mm;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 15mm;
+    margin: 0;
+    background-color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 71% 26% 3%;
+    grid-template-rows: 30% 55% 15%;
+    grid-template-areas: "jumbotron jumbotron sidebar" "content thumbnails sidebar" "links thumbnails sidebar";
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+    background-color: #fff;
+}
+
+.box {
+    /* border: 0.5mm solid rgb(171, 181, 191); */
+    overflow: hidden;
+}
+
+.jumbotron {
+    grid-area: jumbotron;
+    background-image: url("img/44.png");
+    background-position-y: 50%;
+    background-size: cover;
+    color: white;
+    font-size: 20mm;
+    padding-left: 10mm;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1mm 1mm 5mm rgb(0, 0, 0), 0mm 0mm 5mm rgb(255, 255, 255);
+}
+
+.content {
+    grid-area: content;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: scroll;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    word-wrap: break-word;
+    writing-mode: vertical-rl;
+    padding: 0;
+    transform: rotate(180deg);
+    font-size: 3.6mm;
+    overflow: visible;
+    padding: 0mm 2mm;
+}
+
+.links {
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 5mm;
+    padding: 0;
+    margin-right: 3mm;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.backBlack {
+    border-radius: 2mm;
+    background-color: #ddd;
+    color: #000;
+    background: radial-gradient(circle at center, rgb(240, 240, 240) 0, #fff, #ddd 100%)
+}
+
+.links div div {
+    font-size: 8mm;
+    background-color: rgba(0, 0, 0, 0.124);
+}
+
+.qrcode {
+    grid-area: qrcode;
+    padding: 3mm;
+    font-size: 9mm;
+    overflow: visible;
+    border-bottom-left-radius: 7mm;
+    border-bottom-right-radius: 7mm;
+}
+
+.thumbnails {
+    grid-area: thumbnails;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2mm;
+}
+
+.jumbotron {
+    border-radius: 2mm;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-size: 5mm;
+    line-height: 0.8;
+    background-color: rgb(214, 214, 214);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    font-variant-caps: petite-caps;
+    margin-bottom: 1.5mm;
+    text-align: center;
+    border-radius: 10mm;
+    background: radial-gradient(circle at center, #ddd 0, #fff 100%)
+}
+
+p {
+    margin: 1mm 0mm;
+    padding: 0;
+}
+
+.thumbnails div {
+    font-size: 4.5mm;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    border-radius: 2mm;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: -5mm;
+    z-index: 1;
+}
+
+.thumbnails {
+    text-align: center;
+}
