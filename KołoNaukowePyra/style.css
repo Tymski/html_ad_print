@@ -56,6 +56,7 @@ body {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: scroll;
+    text-align: justify;
 }
 
 .sidebar {
